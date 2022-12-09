@@ -41,7 +41,9 @@ def structure_(name):
         frequency_penalty=0,
         presence_penalty=0
         )
-    
+## Title: Essay outline
+## Availibility: https://beta.openai.com/examples/default-essay-outline
+
     struc_text = response.choices[0].text
 
     for i in range(len(struc_text)):
@@ -119,6 +121,8 @@ def sum_text(name):
             frequency_penalty=0,
             presence_penalty=0
             )
+# From https://beta.openai.com/docs/api-reference/introduction
+
         sum_ = response.choices[0].text    
         sum_text.append(sum_)
         
@@ -146,6 +150,18 @@ def sum_text(name):
 
 #     # Results match those from the CPU device after the warmup pass.
 #     image = pipe(prompt).images[0]
+
+## *    Title: How to use Stable Diffusion in Apple Silicon (M1/M2)
+## *    Availability: https://huggingface.co/docs/diffusers/optimization/mps
+
+# @InProceedings{Rombach_2022_CVPR,
+#     author    = {Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Bj\"orn},
+#     title     = {High-Resolution Image Synthesis With Latent Diffusion Models},
+#     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+#     month     = {June},
+#     year      = {2022},
+#     pages     = {10684-10695}
+# }
 
 
 # In[5]:
